@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script type = "text/javascript" src= "http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src = "index.js"></script>
+	<link rel = "stylesheet" type = "text/css" href ="index.css">
+	<meta charset="UTF-8">
+	<title>Poki Battle</title>
+</head>
+
+<body>
+	<h1>Pokemon Fight!</h1>
+	<h2 id = "vs"> VS! </h2>
+	<h3 id = "winner"></h3>
+	<div id = "left">
+	<h2 id = "left-pokemon"></h2>
+	<h2 id = "winner_left">winner!</h2>
+	<h2 id = "loser_left">loser!</h2>
+	<h2 id = "left-health"></h2>
+	<img id = "left-pic" src = ""/>
+	<button id = "first-left-attack" onclick = "attack1_left()"/>
+	<button id = "second-left-attack" onclick = "attack2_left()"/>
+	</div>
+	<div id = "right">
+	<h2 id = "right-pokemon"></h2>
+	<h2 id = "loser_right">loser!</h2>
+	<h2 id = "winner_right">winner!</h2>
+	<h2 id = "right-health"></h2>
+	<img id = "right-pic" src = ""/>
+	<button id = "first-right-attack" onclick="attack1_right()"/>
+	<button id = "second-right-attack" onclick ="attack2_right()"/>
+	</div>
+	<div id = "next_battle">
+	<button id = "next_battle_button" onclick = "next_battle()" >Next battle!</button>
+	</div>
+</body>
+</html>
