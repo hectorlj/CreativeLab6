@@ -4,17 +4,43 @@
   <title>User Login and Sessions</title>
   <link rel="stylesheet" type="text/css" 
       href="/static/css/styles.css" />
+  <link rel="stylesheet" type = "text/css"
+	href="/static/css/index.css"/>
 </head>
 <body>
   <div ng-controller="myController">
     <h2>Welcome. You are Logged In as <%= username %></h2>
     <a href="/logout">logout</a>
     <a href="/user">Edit User</a>
-    <p>Place Your Code Here<p>
+    <h1>Pokemon Fight!</h1>
+	<h2 id = "vs"> VS! </h2>
+	<h3 id = "winner"></h3>
+	<div id = "left">
+	<h2 id = "left-pokemon"></h2>
+	<h2 id = "winner_left">winner!</h2>
+	<h2 id = "loser_left">loser!</h2>
+	<h2 id = "left-health"></h2>
+	<img id = "left-pic" src = ""/>
+	<button id = "first-left-attack" onclick = "attack1_left()"/>
+	<button id = "second-left-attack" onclick = "attack2_left()"/>
+	</div>
+	<div id = "right">
+	<h2 id = "right-pokemon"></h2>
+	<h2 id = "loser_right">loser!</h2>
+	<h2 id = "winner_right">winner!</h2>
+	<h2 id = "right-health"></h2>
+	<img id = "right-pic" src = ""/>
+	<button id = "first-right-attack" onclick="attack1_right()"/>
+	<button id = "second-right-attack" onclick ="attack2_right()"/>
+	</div>
+	<div id = "next_battle">
+	<button id = "next_battle_button" onclick = "next_battle()" >Next battle!</button>
+	</div>
   </div>
   <hr><%= msg %>
   <hr>Color <%= color %>
   <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
   <script src="/static/js/my_app.js"></script>
+  <script src="/static/js/index.js"></script>
 </body>
 </html>
